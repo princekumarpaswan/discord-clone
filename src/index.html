@@ -13,11 +13,17 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
 </head>
-<body  class="container"  >
-    <section  class="bg-[#404EED]" >
-        <div class=" flex  p-5 px-2 justify-around items-center	 " >
+<body  class="container "  >
+
+    <!-- Hero section -->
+
+
+    <section  class="bg-[#404EED] " >
+
+        <!-- nav bar -->
+        <div class=" flex  p-5 px-2 justify-around items-center z-[-1]" >
             <div class="w-36" >
-                <img  src="../img/logo.png" alt="img">
+                <img class="ml-[-30px]"  src="../img/logo.png" alt="img">
             </div>
 
             <div class="hidden" >
@@ -32,28 +38,143 @@
                 </ul>
             </div>
 
-            <div  >
-                <button class="bg-white py-[10px] rounded-[30px] text-[13px] px-4 " >Open Discord</button>
+            <div class="hidden">
+                <button class="bg-white py-[10px] rounded-[30px] text-[13px] px-4 z-0  " >Open Discord</button>
             </div>
 
-            <div >
-                <i class="fa fa-bars text-white text-[30px] font-[900]" aria-hidden="true  " ></i>
+            <div id="button" >
+               <button > <i  class="fa fa-bars text-white text-[30px] mr-[-20px] font-[900]" aria-hidden="true"></i></button>
+               
+            </div>
+            
+            
+
+        </div>
+
+
+
+
+        <!-- mobile  menu  -->
+
+        <div id="mobileMenu" class="w-[300px]  bg-white z-[5] ml-16 h-[100vh] fixed hidden rounded-lg transition ease-linear delay-1000  mt-[-80px]" >
+            <div class="flex  justify-between p-6 " >
+                <img class="w-[160px]" src="../img/menulogo.png" alt="img">
+                <button><i class="fa fa-times text-[25px]  "  aria-hidden="true"></i></button>
+            </div>
+            <hr class="mt-4 mx-6" >
+
+            <ul class="px-10 mt-6 leading-10 align-middle " >
+                <li class="bg-[#e0dddd] text-blue-400 pl-3 rounded-md " >Home</li>
+                <li class="pl-3">Download</li>
+                <li class="pl-3">Nitro</li>
+                <li class="pl-3">Discover</li>
+                <li class="pl-3">Safety <i class="fa fa-chevron-right ml-2 mt-2 " aria-hidden="true"></i></li>
+                <li class="pl-3">Mod Academy <i class="fa fa-chevron-right ml-2 mt-2" aria-hidden="true"></i></li>
+                <li class="pl-3">Support</li>
+                <li class="pl-3">Blog</li>
+                <li class="pl-3">Careers</li>
+            </ul>
+
+            <div class=" lg:hidden text-white text-center mt-[200px] mx-8"  >
+                <button class="bg-[#404EED] flex rounded-[30px] pt-2 px-5 " > <span class="text-center  w-10"><i class="fa fa-arrow-down" aria-hidden="true"></i></span> <div class="rotate-90 flex mt-3 ml-[-22px] " >]</div> <span class="text-center ml-3 mt-1 text-[12px]  " >Download form Google Play</span> </button>
             </div>
 
         </div>
 
+
+        
+
+        <!-- main cointain -->
+
         <div>
-            <div class="mt-9  " >
-                <h1 class="text-center text-[30px] text-white font-[900] font-[Fjalla One] tracking-tighter " >IMAGINE A PLACE...</h1>
+            <div class="mt-9 " >
+                <h1 class=" px-5 text-[30px] text-white font-[900] font-[Fjalla One] tracking-tighter " >IMAGINE A PLACE...</h1>
                 <P class="text-white mt-5 px-5 leading-[26px]" >...where you can belong to a school club, a gaming group, or a worldwide art community. Where just you and a handful of friends can spend time together. A place that makes it easy to talk every day and hang out more often.</P>
             </div>
 
-            <div  >
-                <button class="bg-white flex justify-center " > <img src="../img/down.png" alt="img" > <span>Download for Linux</span> </button>
+            <div class=" lg:hidden px-3 mt-4 "  >
+                <button class="bg-white flex  py-3 px-5 rounded-[30px] " > <span class="text-center  w-10
+                    "  ><img src="../img/down.png" alt="img" ></span> <span class="text-center text-[20px]  " >Download form Google Play</span> </button>
+            </div>
+
+            <div class="mt-10 w-[400px] ml-[-90px] " >
+                <img src="../img/mainSideSeond.svg" alt="img">
             </div>
 
         </div>
 
+       
+
     </section>
+    
+
+    <!-- study section -->
+    <section class="mt-14 p-3" >
+        <div>
+            <div>
+                <img src="../img/study-group.svg" alt="img">
+            </div>
+            <div>
+                <h1 class="font-extrabold text-[18px] mt-8 " >Create an invite-only place where you <br> belong</h1>
+                <p class="mt-5 text-[#333131] leading-7 " >Discord servers are organized into topic-based channels where you can collaborate, share, and just talk about your day without clogging up a group chat.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- vioce connect section -->
+
+    <section class="mt-14 p-3 bg-[#F6F6F6] " >
+        <div>
+            <div class="mt-10" >
+                <img src="../img/Voice-Connected.svg" alt="img">
+            </div>
+            <div class="mb-10" >
+                <h1 class="font-extrabold text-[18px] mt-8 " >Where hanging out is easy</h1>
+                <p class="mt-5 text-[#333131] leading-7 " >Grab a seat in a voice channel when you’re free. Friends in your server can see you’re around and instantly pop in to talk without having to call.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- coach secton -->
+
+    <section class="mt-14 p-3" >
+        <div>
+            <div>
+                <img src="../img/coach.svg" alt="img">
+            </div>
+            <div>
+                <h1 class="font-extrabold text-[18px] mt-8 " >From few to a fandom</h1>
+                <p class="mt-5 text-[#333131] leading-7 " >Get any community running with moderation tools and custom member access. Give members special powers, set up private channels, and more.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- relible section -->
+
+    <section class="mt-14 p-3 bg-[#F6F6F6] " >
+        <div class="mt-9 " >
+            <h1 class=" text-[30px] font-[900] font-[Fjalla One] leading-[25px] " >RELIABLE TECH FOR STAYING CLOSE</h1>
+            <P class="text-[#333131] mt-5 leading-[26px]" >Low-latency voice and video feels like you’re in the same room. Wave hello over video, watch friends stream their games, or gather up and have a drawing session with screen share.</P>
+        </div>
+
+        <div class="mt-3" >
+            <img src="../img/justChill.svg" alt="img">
+        </div>
+        <div class="mt-[50px] bg-[url('../img/star.svg')] " >
+            <h1 class=" text-[30px] font-[900] leading-[25px] " >Ready to start your journey?</h1>
+        </div>
+
+        <div class=" lg:hidden text-white mt-10  "  >
+            <button class="bg-[#404EED] flex  py-3 px-5 rounded-[30px] " > <span class="text-center  w-10
+                "  ><i class="fa fa-arrow-down" aria-hidden="true"></i></span> <div class="rotate-90 flex
+                 mt-3 ml-[-22px] " >]</div> <span class="text-center ml-4 text-[20px]  " >Download form Google Play</span> </button>
+        </div>
+    </section>
+    
+
+
+
+<script src="./index.js"></script>
+
 </body>
 </html>
